@@ -1,0 +1,22 @@
+<div class="geral">
+    <div class="codigo">
+        <h2 class="tituloAlerta">Esqueci minha senha</h2>
+        <hr />
+
+        <form action="./controller/esqueciSenha.php" method="post" id="form-rec-senha">
+            <div class="campoform">
+                <input type="email" name="email" placeholder=" e-m@il.com" class="campoEmail" />
+            </div>
+            <h4 style="color: white;">Digite o email utilizado para o envio da nova senha:</h4>
+            <div class="campoBotoesEsqSenhaGeral">
+                <div class="campoBotoesEsqSenha">
+                    <button type="submit" class="botaoCarregar">Enviar</button>
+                    <button type="button" class="botaoCancelar" onclick="paginaInicial()">Cancelar</button>
+                </div>
+            </div>
+            <span class="spanEsqueciSenha">
+                Não tem conta? <a href="#" onclick=cadastrar() class="facaCadastro">Faça seu cadastro</a>
+            </span>
+        </form>
+    </div>
+</div>
