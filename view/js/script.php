@@ -1,6 +1,7 @@
 <?php
 
-if (!empty($_SESSION["email"])) {
+// salva essa linha if (!empty($_SESSION["email"])) {
+    if (1==1) {
     ?>
 
 
@@ -59,7 +60,7 @@ if (!empty($_SESSION["email"])) {
         localStorage.setItem("estadoAtual", "1")
         document.getElementById("corpo").innerHTML = `
             <?php
-            require 'view/msg/esqueci-senha.html';
+            //require 'view/msg/esqueci-senha.html';
             ?>`
         ;
     }
@@ -68,7 +69,7 @@ if (!empty($_SESSION["email"])) {
         localStorage.setItem("estadoAtual", "2")
         document.getElementById("corpo").innerHTML = `
             <?php
-            require 'view/cadastro.html';
+            //require 'view/cadastro.html';
             ?>`
         
         ;
