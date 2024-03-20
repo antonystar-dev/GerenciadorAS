@@ -17,3 +17,4 @@ if (is_file('./models/functions.php')) {
 <link rel='stylesheet' type='text/css' media='screen' href='<?php echo $caminho; ?>css/menu.css'>
 <link rel='stylesheet' type='text/css' media='screen' href='<?php echo $caminho; ?>css/textos.css'>
 <link rel='stylesheet' type='text/css' media='screen' href='<?php echo $caminho; ?>css/admin.css'>
+<link rel='stylesheet' type='text/css' media='screen' href='<?php echo $caminho; ?>css/style.css'>

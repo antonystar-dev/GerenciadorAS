@@ -21,7 +21,7 @@ if($linkUnico!=1){
 
                 </option>
                 <?php
-                            include './banco/banco.php';
+                            include './models/conexao/bancoAnalistar.php';
                             $pdo = BancoAnalistar::conectar();
                             $sql = 'SELECT distinct dataacesso FROM usuario order by dataacesso DESC';
 

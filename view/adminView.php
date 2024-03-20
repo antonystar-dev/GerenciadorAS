@@ -1,7 +1,7 @@
 <?php
 
-session_start();
-include '../login/validaLogin.php';
+//session_start();
+//include '../login/validaLogin.php';
 $linkUnico=1;
 ?>
 <!DOCTYPE html>
@@ -19,14 +19,14 @@ $linkUnico=1;
   
        <?php
 
-        include '../menu.php';
+        //include '../menu.php';
 
     ?>
   
   <br><br><br><br><br><br>
   <?php
         // pega a partir do request a pagina que escolhermos
-        include("./banco/config.php");
+        include("./models/conexao/config.php");
         switch (@$_REQUEST["page"]) {
           case "novo":
             include("novo-link.php");
@@ -35,7 +35,7 @@ $linkUnico=1;
             include("lista-link.php");
             break;
             case "salvar":
-            include("salvar-link.php");
+            include("./controller/salvar-link.php");
             break;
             case "editar":
               include("editar-link.php");

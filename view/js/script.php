@@ -27,6 +27,13 @@ if (!empty($_SESSION["email"])) {
                 require_once 'view/usr/perfil.php';
                 ?>`;
         }
+        function pgAdminView() {
+            localStorage.setItem("estadoAtual", "7")
+            document.getElementById("corpo").innerHTML = `
+                <?php
+                require_once 'view/adminView.php';
+                ?>`;
+        }
 
 
         function editaUsuariopg(id) {
@@ -108,6 +115,9 @@ if (!empty($_SESSION["email"])) {
                 break;
                 case '6':
                 pgPerfil();
+                break;
+                case '7':
+                pgAdminView();
                 break;
             default:
                 document.getElementById("corpo").innerHTML = `

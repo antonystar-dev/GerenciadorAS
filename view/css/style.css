@@ -52,43 +52,7 @@
         padding-left: 10%;
     }
 
-    .menu {
-        background-color: tomato;
-        position: fixed;
-        width: 100%;
-        font-family: 'Open Sans';
-        font-size: 20px;
-        font-weight: bold;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    
-    .menu-centro {
-    
-        display: flex;
-        margin-left: 50%;
-    }
-
-    .item-menu {
-    
-        padding-left: 10px;
-        padding: 20px 15px 0 15px;
-    }
-    
-    .item-menu a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-    }
-    
-    .item-menu a:hover {
-        color: rgb(255, 255, 255);
-    }
-    
-        
-    .hr-menu:hover {
-        color: green;
-    }
+   
     
     .menu2 {
         background-color: rgb(0, 0, 0);
