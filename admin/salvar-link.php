@@ -1,4 +1,7 @@
 <?php
+if($linkUnico!=1){
+    header('Location:../');
+}
 switch ($_REQUEST["acao"]) {
     case "cadastrar":
        $online = $_POST["online"];

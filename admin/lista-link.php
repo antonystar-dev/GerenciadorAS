@@ -1,3 +1,8 @@
+<?php
+if($linkUnico!=1){
+    header('Location:../');
+}
+?>
 <div class="div-viewport">
 
 <div class="dadoGerado">

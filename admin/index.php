@@ -2,7 +2,7 @@
 
 session_start();
 include '../login/validaLogin.php';
-
+$linkUnico=1;
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -26,7 +26,7 @@ include '../login/validaLogin.php';
   <br><br><br><br><br><br>
   <?php
         // pega a partir do request a pagina que escolhermos
-        include("config.php");
+        include("./banco/config.php");
         switch (@$_REQUEST["page"]) {
           case "novo":
             include("novo-link.php");

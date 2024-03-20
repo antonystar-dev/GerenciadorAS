@@ -1,8 +1,7 @@
 <?php
-
-session_start();
-include '../login/validaLogin.php';
-
+if($linkUnico!=1){
+    header('Location:../');
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
