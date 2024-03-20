@@ -1,0 +1,40 @@
+<div class="img">
+    <div class="lateral">
+        <div class="cadastro">
+            <div class="campoform">
+                <h1 class="nomelogo">Faça seu cadastro</h1>
+                <form action="./controller/cadastraUsuario.php" method="post" id="formCadastro">
+                    <label>Nome:</label>
+                    <input type="text" name="nome" id="nomeUsuario" class="inputCadastro" placeholder="Nome"
+                        title="Preenche o campo nome" required />
+                    <label>E-mail:</label>
+                    <input type="email" name="email" id="emailUsuario" class="inputCadastro" placeholder="email"
+                        title="digite o email corretamente" required />
+                    <div class="senhaDiv">
+                        <label>Senha:</label>
+
+                    </div>
+                    <div class="senhaDiv">
+
+                        <input type="password" name="senha" id="senhaUsuario" class="senhaCadastro" placeholder="Senha"
+                            title="digite a senha" required />
+                        <input type="password" name="confSenha" id="confirmarSenha" class="senhaCadastro"
+                            placeholder="Confirmar a senha" title="confirme a senha" require /><br>
+                    </div>
+                    <div>
+                        <br />
+
+                        <div>
+                            <input type="submit" value="Cadastrar" class="botaoEntrar" />
+                            <input type="button" value="Cancelar" onclick="paginaInicial()" class="botaoCancelar" />
+                        </div>
+                        <br>
+
+                        <span>Ja tem conta? <a href="#" onclick=login()>Faça seu Login</a></span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
