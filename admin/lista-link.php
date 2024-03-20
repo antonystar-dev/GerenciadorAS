@@ -18,12 +18,14 @@ if ($qtd > 0) {
     while ($row = $res->fetch_object()) {
         echo "<tr>";
         echo "<td class='colunaFixa' height='40px'>" . $id = $row->id . "</td>";
-        echo "<td>" . $online = $row->online . "</td>";
-        echo "<td>" . $local = $row->local . "</td>";
+        $online= $row->online;
+        $local = $row->local;
+        echo "<td><a href='".$online."'target='_blank'>".$online."</a></td>";
+        echo "<td><a href='".$local."'target='_blank'>".$local."</a></td>";
        
         echo "<td>
-         <button onclick=\"location.href='?page=editar&id=" . $row->id . "';\" >Editar</button>
-         <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=salvar&acao=excluir&id=" . $row->id . "';}else{false;}\">Excluir</button>
+         <button class='btAlterar' onclick=\"location.href='?page=editar&id=" . $row->id . "';\" >Editar</button>
+         <button class='btExcluir' onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=salvar&acao=excluir&id=" . $row->id . "';}else{false;}\">Excluir</button>
          </td>";
 
         echo "</tr>";

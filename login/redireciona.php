@@ -28,7 +28,7 @@ $body = $body . "===================================" . "\n";
 
 switch ($_SESSION["perfil"]) {
     case "administrador":
-        header("Location: ../configuracao-cursos/index.php");
+        header("Location: ../admin");
         break;
     case "Usuario":
         header("Location:../View/menu.php");

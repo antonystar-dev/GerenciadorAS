@@ -16,16 +16,13 @@ include '../login/validaLogin.php';
 </head>
 
 <body>
-  <div class="menu">
-    <a class="nav-link active" href="?page=page">Acessos</a>
-    <a class="nav-link" href="?page=novo">Novo link</a>
-    <a class="nav-link" href="?page=listar">Listar links</a>
-    <?php
+  
+       <?php
 
         include '../menu.php';
 
     ?>
-  </div>
+  
   <br><br><br><br><br><br>
   <?php
         // pega a partir do request a pagina que escolhermos
@@ -39,10 +36,15 @@ include '../login/validaLogin.php';
             break;
             case "salvar":
             include("salvar-link.php");
+            break;
             case "editar":
               include("editar-link.php");
+              break;
               case "busca":
                 include("relatorio.php");
+                break;
+                
+      
           default:
           include("relatorio.php");
         }

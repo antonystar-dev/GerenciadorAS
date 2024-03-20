@@ -79,7 +79,7 @@ include '../login/validaLogin.php';
                             ?>
 
             </select>
-            <input type="submit" value="carregar">
+            <input type="submit" value="carregar" class="btCarregar">
         </form>
    
     </div>
