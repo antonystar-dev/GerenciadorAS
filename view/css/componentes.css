@@ -1,3 +1,13 @@
+.botaoPadrao {
+    background-color: #0b0c0c;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold; 
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
 .inputCadastro {
     width: 100%;
     padding: 12px;

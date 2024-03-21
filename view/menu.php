@@ -25,8 +25,8 @@
 
                
           <?php    
-        echo'<button onclick=pgPerfil() >Perfil</button>';
-        echo'<a href="./controller/logoffController.php"><button>Sair</button></a>';
+        echo'<button onclick=pgPerfil() class="botaoPadrao"><a href="#">Perfil</a></button>';
+        echo'<button class="botaoPadrao"><a href="./controller/logoffController.php">Sair</a></button>';
         break;
     case "Usuario":
         ?>
@@ -34,8 +34,8 @@
                     <hr class="hr-menu">
                 </div>
         <?php
-        echo'<button onclick=pgPerfil()>Perfil</button>';
-        echo'<a href="./controller/logoffController.php"><button>Sair</button></a>';
+        echo'<button onclick=pgPerfil() class="botaoPadrao"><a href="#">Perfil</a></button>';
+        echo'<button class="botaoPadrao"><a href="./controller/logoffController.php">Sair</a></button>';
         break;
         default:
         //echo'<button onclick=login()>Entrar</button>';

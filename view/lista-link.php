@@ -25,8 +25,8 @@ if ($qtd > 0) {
         echo "<td class='colunaFixa' height='40px'>" . $id = $row->id . "</td>";
         $online= $row->online;
         $local = $row->local;
-        echo "<td><a href='".$online."'target='_blank'>".$online."</a></td>";
-        echo "<td><a href='".$local."'target='_blank'>".$local."</a></td>";
+        echo "<td class='linkTexto'><a href='".$online."'target='_blank' style='color:black'>".$online."</a></td>";
+        echo "<td class='linkTexto'><a href='".$local."'target='_blank' style='color:black'>".$local."</a></td>";
        
         echo "<td>
          <button class='btAlterar' onclick=\"location.href='?page=editar&id=" . $row->id . "';\" >Editar</button>
