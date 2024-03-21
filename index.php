@@ -1,4 +1,7 @@
 <?php
+
+//include_once '../analistar/analistar.php';
+    
 include './controller/sessionController.php';
 //include './controller/validalogin.php';
 require './view/header.php';

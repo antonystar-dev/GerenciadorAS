@@ -11,7 +11,7 @@ echo "<table border='0' align='center' class='tabelaAdmin'>";
 echo "<tr>";
 echo "  <th class='tituloTabela sumir'>ID</th>";
 echo "  <th class='tituloTabela celular'>Nome</th>";
-echo "  <th class='tituloTabela sumir'>Senha</th>";
+//echo "  <th class='tituloTabela sumir'>Senha</th>";
 echo "  <th class='tituloTabela'>E-mail</th>";
 echo "  <th class='tituloTabela sumir'>Estado</th>";
 echo "  <th class='tituloTabela celular'>Situação</th>";
@@ -25,7 +25,7 @@ foreach ($usuarios as $u) {
     echo "<tr>";
     echo "<td class='colunaTabela1 sumir'>{$u["id"]}</td>";
     echo "  <td class='colunaTabela1 celular'>{$u["nome"]}</td>";
-    echo "  <td class='colunaTabela1 sumir'>{$u["senha"]}</td>";
+   // echo "  <td class='colunaTabela1 sumir'>{$u["senha"]}</td>";
     echo "  <td class='colunaTabela1'>{$u["email"]}</td>";
     echo "  <td class='colunaTabela1 sumir'>{$u["estado"]}</td>";
     //echo "  <td>{$u["situacao"]}</td>";
@@ -68,7 +68,7 @@ if ($result->num_rows > 0) {
 
         $id = $row["id"];
         $nome = $row["nome"] ?? null;
-        $senha = $row["senha"] ?? null;
+        //$senha = $row["senha"] ?? null;
         $email = $row["email"] ?? null;
         $codTemp = $row["cod_temp"] ?? null;
         $dirTemp = $row["dir_temp"] ?? null;
