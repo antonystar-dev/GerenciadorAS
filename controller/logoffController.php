@@ -27,5 +27,10 @@ if ($result->num_rows > 0) {
 }
 
 session_destroy();
+?>
+<script>
+    localStorage.setItem("estadoAtual", "3");
+</script>
+<?php
 header("Refresh: 0;url='../'");
 ?>

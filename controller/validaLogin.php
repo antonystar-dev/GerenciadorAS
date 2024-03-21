@@ -15,7 +15,8 @@ if (local==4 || local==5){
    
     login();
     window.location.reload(true);
-}
+}else{
+    alert('Eu sou um alert!');
 
 </script>";
 
